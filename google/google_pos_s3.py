@@ -42,11 +42,6 @@ def setup_logger(name):
 
 def access_token_from_refresh_token(client_id, client_secret, refresh_token):
 
-    # these are the new parameters for Matt Howell account
-    #client_id = "32555940559.apps.googleusercontent.com"
-    #client_secret = "ZmssLNjJy2998hD4CTg2ejr2"
-    #refresh_token = "1/CLoD2BXcyZLO6cMxe82GSg1HixzZQvw4kdlE1XAGN1sGY62Rj5kwDGWVw0VRrrpx"
-
     request = Request('https://accounts.google.com/o/oauth2/token',
         data=urlencode({
             'grant_type': 'refresh_token',
@@ -80,8 +75,8 @@ def get_object(service, bucket, filename, out_file):
 
 def main():
 
-    s3_bucket = 'analyst-jean-michel'
-    s3_prefix = 'google'
+    s3_bucket = 'xxxxxxxxxxx'
+    s3_prefix = 'xxxxxxxxxx'
 
     # setup arguments
     parser = argparse.ArgumentParser(description="todo")
