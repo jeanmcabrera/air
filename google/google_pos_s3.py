@@ -178,6 +178,7 @@ def main():
 
         objlist = service.objects().list_next(objlist, resp)
 
+    # to remove the temp folder
     #os.chdir('..')
     #shutil.rmtree(working_dir)
 
